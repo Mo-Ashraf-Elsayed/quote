@@ -15,6 +15,7 @@ var ele = document.getElementById("quote");
 var lastNum;
 function showData() {
   var num = Math.floor(Math.random() * data.length);
+  // To change num if repeated
   while (lastNum === num) {
     num = Math.floor(Math.random() * data.length);
   }
